@@ -1,0 +1,532 @@
+:root{
+    --main-color:#ff0;
+    --light-white: rgba(255,255,255, .5);
+    --light-black: rgba(0,0,0, .3);
+    --light-bg: rgba(255,255,255, .1);
+    --white: #fff;
+    --black: #000;
+}
+
+*{
+    font-family: 'Comfortaa', cursive;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: inherit ;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+*::selection{
+    background-color: var(--main-color);
+    color: var(--black);
+}
+
+*::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--white);
+}
+
+body{
+    background-color: var(--black);
+}
+
+.container{
+    padding-top: 10rem;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem ;
+}
+
+.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: linear-gradient(0deg, transparent, var(--black));
+    z-index: 1000;
+}
+
+.header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.header .flex .logo{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.header .flex .ch a {
+    margin-left: 2rem;               /* MENU*/
+    font-size: 1.8rem;
+    color: var(--light-white);
+    transition: .2s linear;
+    position: relative;
+}
+
+.header .flex .ch a:hover {
+    color: var(--white);
+}
+
+.header .flex .ch ul .sub-menu{
+    position: absolute;
+
+}
+
+
+
+#menu-btn{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+}
+
+.home{
+    background: url(../images/travinh.jpg) no-repeat rgba(199, 185, 185, 0.5);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.home .flex{
+    min-height:calc(100vh - 10rem) ;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.home .flex .gth{
+    background-color: var(--light-black);
+    height: 26rem;
+    margin: 6rem;
+    max-width: 70rem;
+    border-radius: 1rem;
+}
+
+.home .flex .gth h3{
+    padding: 1rem;
+    font-size: 5rem ;
+    color: beige;
+    text-align: center;
+}
+*/
+.home .flex .gth p{
+    font-size: 2rem;
+    color: beige;
+    padding: 1rem ;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    border-radius: .5rem;
+    background:var(--main-color);
+    color:var(--black);
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%;
+    transform: .2s linear;
+}
+
+.btn:hover{
+    background: var(--light-black);    
+    color: var(--white);
+}
+
+.about{
+    background: url(../images/travinh.jpg) no-repeat rgba(0,0,0, .5);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+}
+
+.about .details  {
+    border-radius: .5rem;
+    background: no-repeat rgba(0,0,0, .5);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 60vh;
+}
+
+.about .details .box{
+    width: 90rem;
+    background-color: var(--light-bg);
+    padding: 3rem 2rem;
+    text-align: justify;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+
+.about .details .box h3 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.about .details .box p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--light-white);
+    line-height: 2;
+}
+
+.about .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+
+}
+
+.dddl h3{
+    padding: 2rem 0rem;
+    border-radius: .5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.dddl a{
+    padding: 3rem 0;
+    font-size: 2.5rem;
+    color: var(--white);
+    transition: .2s linear;
+}
+
+.dddl a:hover{
+    color: var(--light-white);
+}
+
+.about .grid .box{
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+
+.about .grid .box img{
+    height: 15rem;
+    border-radius: 1rem;
+    transition: .2s linear;
+}
+
+.about .grid .box h3{
+    padding: 2rem 0;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.about .grid .box p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--light-white);
+    text-align: justify;
+}
+
+.about .grid .box:hover{
+    background-color: var(--light-black);
+}
+
+.about .grid .box:hover img{
+    transform: scale(1.1);
+}
+
+.review{
+    background: url(../images/travinh.jpg) no-repeat rgba(0,0,0, .7);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+}
+
+.review .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.review .grid .box {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+
+.review .grid .box img{
+    height: 15rem;
+    border-radius: 1rem;
+    transition: .2s linear;
+    margin-bottom: 2rem;
+}
+
+.review .grid .box h3{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.review .grid .box p {
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-white);
+    font-size: 1.5rem;
+    text-align: justify;
+
+}
+
+.review .grid .box:hover img{
+    transform: scale(1.1);
+}
+.review .grid .box:hover{
+    background-color: var(--light-black);
+
+}
+
+.hotel .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.hotel .grid .box {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+
+.hotel .grid .box img{
+    height: 15rem;
+    border-radius: 1rem;
+    transition: .2s linear;
+    margin-bottom: 2rem;
+}
+
+.hotel .grid .box h3{
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.hotel .grid .box p {
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-white);
+    font-size: 1.5rem;
+    text-align: justify;
+
+}
+
+.hotel .grid .box:hover img{
+    transform: scale(1.1);
+}
+.hotel .grid .box:hover{
+    background-color: var(--light-black);
+
+}
+
+.tour{
+    background: url(../images/travinh.jpg) no-repeat rgba(215, 198, 113, 0.7);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+.tt h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 9rem;
+}
+
+.tour .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.tour .grid .box{
+    position: relative;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.tour .grid .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tour .grid .box h3{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-bg);
+    backdrop-filter: blur(.4rem);
+    transition: .2s linear;
+    opacity: 0;
+}
+*/
+.tour .grid .box h3 span{
+    font-size: 2.5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.tour .grid .box:hover h3{
+    opacity: 1;
+}
+
+.aobaom{
+    background: url(../images/travinh.jpg) no-repeat rgba(0,0,0, .7);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.aobaom .grid {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aobaom .grid .box img{
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;  
+    width: 40%;
+    height: 50%;
+    width: 70%;
+}
+
+.aobaom .grid .box p {
+    
+    text-align: justify;
+    padding: 2rem;
+    font-size: 2rem;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+ @media (max-width:910px){
+    html{
+        font-size: 55%;
+    }
+    .heading{
+        font-size: 5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+  @media (max-width:740px) {
+   
+    #menu-btn{
+        display: inline-block;
+    } 
+    
+    .header .flex{
+     position: relative;   
+    }
+
+    .header .flex .ch{
+        position: absolute;
+        top: 100%; left: 2rem; right: 2rem;
+        background-color: var(--light-white);
+        backdrop-filter: blur(.4rem);
+        border-radius: .5rem;
+        transform: scale(0);
+        transform-origin: top right;
+        transition: .2s linear;
+    }
+
+    .header .flex .ch.active{
+        transform: scale(1);
+        transition: .2s linear;
+    }
+
+   .header .flex .ch a{
+        display: block;
+        padding: .5rem 1.5rem;
+        margin: 1.5rem .5rem;
+        color: var(--white);
+        border-radius: .5rem;
+    }
+
+    .header .flex .ch a:hover{
+        background-color: var(--light-bg);
+    }
+    .heading{
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width:439px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .header .flex .ch{
+        transform: scale(0);
+    }
+
+}
